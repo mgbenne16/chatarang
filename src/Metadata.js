@@ -1,6 +1,6 @@
 import React from 'react'
 
-cosnt Metadata = ({ message }) => {
+const Metadata = ({ message }) => {
     return (
         <div className='Metadata' style={styles.data}>
           <div style={styles.user}>{message.user.userName}</div>
