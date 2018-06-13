@@ -22,7 +22,7 @@ class Chat extends Component {
             asArray: true,
         })
     }
-    
+
     addMessage = (body) => {
         const messages = [...this.state.messages]
         messages.push({
@@ -50,4 +50,5 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
 }
+
 export default Chat 

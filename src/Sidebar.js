@@ -37,4 +37,6 @@ const styles = {
     },
 }
 
+const endpoint = base.syncState
+
 export default Sidebar

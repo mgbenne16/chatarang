@@ -15,4 +15,6 @@ const config = {
 const app = firebase.initializeApp(config)
 const db = app.database()
 
+const endpoint = base.syncState
+
 export default Rebase.createClass(db)
