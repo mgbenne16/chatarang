@@ -6,11 +6,6 @@ const Message = (props) => {
           {props.message.userName}: {props.message.body}
         </div>
     )
-},
-
-const styles = {
-    display: 'flex',
-    padding: '0 1rem',
 }
 
 export default Message

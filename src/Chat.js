@@ -35,11 +35,6 @@ class Chat extends Component {
               <MessageForm addMessage={this.addMessage} />
             </div>
         )
-    },
-
-    const styles = {
-        flex: '1',
-        display: 'flex',
     }
 }
 
