@@ -9,13 +9,13 @@ const SignOut = () => {
     )
 }
 
-const styles = {
+const styles = StyleSheet.create({
     button: {
         backgroundColor: 'transparent',
         border: 0,
         padding: 0,
         color: 'rgba(255, 255, 255, 0.6)',
-        fontSize: '1.2rem'
+        fontSize: '1.2rem',
         transition: 'color 0.25s ease-out',
 
         ':hover': {
