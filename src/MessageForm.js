@@ -31,6 +31,16 @@ class MessageForm extends Component {
             </form>  
         )
     }
+
+    const styles = {
+        backgrounColor: 'white',
+        height: '3rem',
+        display: 'flex',
+        border: '2px solid #999'
+        margin: '0.25rem',
+        padding: '0',
+    }
+
 }
 
 export default MessageForm
