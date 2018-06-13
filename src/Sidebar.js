@@ -1,23 +1,14 @@
 import React from 'react'
 
+import UserInfo from './UserInfo'
+
 const Sidebar = (props) => {
     return (
         <aside
           className='Sidebar'
-          style={styles.children}
+          style={styles.sidebar}
         >
-          <div
-            className='UserInfo'
-            style={styles.children}
-          >
-            <div className='Avatar'></div>
-            <div className='user'>
-              {props.user.userName}
-            </div>
-            <a href='#'>
-              <i className='fas fa-sign-out-alt'></i>
-            </a>
-          </div>
+        <UserInfo user={props.user} />
           <h1
             style={{
                 ...styles.children,
@@ -42,7 +33,7 @@ const Sidebar = (props) => {
 
 const styles = {
     sidebar: {
-        backgrounColor: '3333444',
+        backgroundColor: '#333344',
         color: 'rgba(255, 255, 255, 0.8)',
         width: '12rem',
         padding: '1rem 0',
@@ -51,14 +42,14 @@ const styles = {
     },
 
     children: {
-        padding: '0 1rem'
+        padding: '0 1rem',
     },
 
     h1: {
         color: 'white',
         fontSize: '1.2rem',
         marginTop: 0,
-    }
+    },
 }
 
 export default Sidebar

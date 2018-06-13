@@ -12,10 +12,4 @@ const MessageList = (props) => {
     )
 }
 
-const styles = {
-    backgrounColor: 'white',
-    flex: '1',
-    padding: '2rem 1rem',
-}
-
 export default MessageList
