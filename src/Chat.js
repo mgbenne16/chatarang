@@ -7,7 +7,7 @@ import MessageForm from './MessageForm'
 import base from './base'
 
 class Chat extends Component {
-    constructor(){
+    constructor() {
         super ()
 
         this.state = {
