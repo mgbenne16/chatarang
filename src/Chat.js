@@ -17,7 +17,7 @@ class Chat extends Component {
     }
 
     componentWillMount() {
-        this.syncMessage()
+        this.syncMessages()
     }
 
     componentDidUpdate(prevProps) {
@@ -42,7 +42,7 @@ class Chat extends Component {
 
     this.setState({ rebaseBinding })
     }
-    
+
     addMessage = (body) => {
         const messages = [...this.state.messages]
         messages.push({
