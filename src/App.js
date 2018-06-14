@@ -18,7 +18,12 @@ class App extends Component {
     }
   }
 
-  handleAuth = (user) => {
+  handleAuth = (oauthuser) => {
+    const user = {
+      email: oauthUser.email,
+      uid: oauthUser.uid
+      displayName: oauthUser.displayName,
+    }
     this.setState({ user })
     localStorage.setItem('user', JSON.stringify(user))
   }
