@@ -12,9 +12,7 @@ const config = {
         messagingSenderId: "242072473029"
 }
 
-const app = firebase.initializeApp(config);
-const db = app.database
-
-rebase.createClass(db)
+const app = firebase.initializeApp(config)
+const db = app.database()
 
 export default Rebase.createClass(db)
