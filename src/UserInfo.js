@@ -18,36 +18,6 @@ const UserInfo = ({user, signOut }) => {
     )
 }
 
-const UserUpdate = ({ firebase:auth().user }) ;{
-
-user.userUpdate({
-  displayName: "You",
-  photoURL: "src = Avatar"
-}).then(function() {
-  // Update successful.
-}).catch(function(error) {
-  // An error happened.
-});
-}
-
-const EmailtoUser = ({ firebase:auth().user }) ;{
-
-user.EmailtoUser().then(function() {
-  // Email sent.
-}).catch(function(error) {
-  // An error happened.
-});
-}
-
-Deleteuser = ({ firebase:auth().user }) ;{
-
-user.delete().then(function() {
-  // User deleted.
-}).catch(function(error) {
-  // An error happened.
-});
-}
-
 const styles ={
     info: {
         marginBottom: '1rem',
