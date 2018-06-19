@@ -60,7 +60,6 @@ class SignIn extends Component {
               <i className={`fab fa-google ${css(styles.brandIcon)}`}></i>
               Sign in with Google
             </button>
-            
           </form>
 
           <div className="blurb">

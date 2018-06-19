@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import Sidebar from './Sidebar'
 import Chat from './Chat'
+import RoomList from './RoomList'
 
 class Main extends Component {
     constructor() {
@@ -41,6 +42,11 @@ class Main extends Component {
                 user={this.props.user} 
                 room={this.state.room}
               />
+        
+        <Switch>
+            <Router>
+        </Switch>
+
             </div>
         )
     }
