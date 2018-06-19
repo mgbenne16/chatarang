@@ -49,7 +49,7 @@ class App extends Component {
     
 
     const users = {...this.state.users}
-    users.[user.uid] = user
+    users[user.uid] = user
 
 
     this.setState({ user, users })
@@ -96,6 +96,13 @@ class App extends Component {
                 {...navProps}
                 />
               : <Redirect to='/sign-in' />
+            )}
+          />
+          <Route
+            render={() => (
+              this.signedIn()
+                ? <Redirect to='/rooms/general' />
+                : <Redirect to='/sign-in' />
             )}
           />
       </Switch>
