@@ -79,7 +79,7 @@ class RoomForm extends Component {
                 type="text"
                 name="name"
                 value={this.state.room.name}
-                className={css(styles.input)}
+                className={css(styles.input, styles.textInput)}
                 onChange={this.handleChange}
                 autoFocus
               />
@@ -92,7 +92,7 @@ class RoomForm extends Component {
                 type="text"
                 name="description"
                 value={this.state.room.description}
-                className={css(styles.input)}
+                className={css(styles.input, styles.textInput)}
                 onChange={this.handleChange}
               />
             </p>
@@ -112,6 +112,8 @@ class RoomForm extends Component {
                     value={this.state.room.users}
                     options={this.users()}
                     onChange={this.handleSelectChange}
+                    className={css(styles.input)}
+                    placeholder="Invite other people..."
                   />
                 </div>
               )
@@ -171,6 +173,8 @@ const styles = StyleSheet.create({
     boxShadow: '0 1px 1px rgba(0,0,0,.1)',
     marginBottom: '2rem',
     paddingBottom: '2rem',
+    paddingLeft: '2rem',
+    paddingRight: '2rem'
   },
 
   label: {
@@ -180,12 +184,10 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    width: '20rem',
     fontSize: '1.5rem',
     border: 0,
     borderBottom: '1px solid black',
-    marginTop: '1rem',
-    marginBottom: '1rem',
+    margin: '1rem auto',
     textAlign: 'center',
     padding: '0.5rem',
 
@@ -194,6 +196,10 @@ const styles = StyleSheet.create({
     },
   },
 
+  textInput: {
+    width: '20rem',
+  },
+  
   h2: {
     fontWeight: 'normal',
   },
