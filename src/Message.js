@@ -1,6 +1,6 @@
 import React, {Component } from 'react'
 import { StyleSheet, css } from 'aphrodite'
-import 'emoji-mart/css/emoji-mart'
+import 'emoji-mart/css/emoji-mart.css'
 import { Picker } from 'emoji-mart'
 
 import Avatar from './Avatar'
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     reactionButton: {
         border: 0,
         outline: 0,
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
         padding: 0,
         color: '#ccc',
         fontSize: '1rem',
@@ -85,6 +85,12 @@ const styles = StyleSheet.create({
             color: '#3366ff',
         },
     },
+
+    <p> How do you feel today? </p>
+    emojis = ['smile', 'frown', 'crying'];
+
+const result = words.filter(word => word.length > 3);
+console.log(result);
 })
 
 const pickerStyles = {
