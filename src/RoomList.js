@@ -4,11 +4,10 @@ import { Route, Switch, Link } from 'react-router-dom'
 
 import RoomLink from './RoomLink'
 import RoomForm from './RoomForm'
-import DirectMessageForm from './DirectMessageForm'
 
 class RoomList extends Component {
     render() {
-        const { rooms } = this.props
+        const { rooms } = this.props.rooms.filter(room => !room.dm)
 
         return (
             <Switch>
@@ -16,7 +15,7 @@ class RoomList extends Component {
                   path='/rooms/new'
                   render={
                       navProps => (
-                          <DirectMessageForm
+                          <RoomForm
                             addRoom={this.props.addRoom}
                             users={this.props.users}
                             user={this.props.user}
