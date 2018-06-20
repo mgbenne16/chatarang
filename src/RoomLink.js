@@ -6,7 +6,11 @@ const RoomLink = ({ room }) => {
     return (
         <li className={css(styles.item)}>
           <NavLink
-            to={`/rooms/${room.name}`}
+            to={`/public/rooms/${room.name}`}
+            to={`/user/public/rooms/${room.name}`}
+            else {
+                <p>Must be a member of room</p>
+            }
             className={css(styles.item)}>
         > 
             { room.name }
