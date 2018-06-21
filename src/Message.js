@@ -16,7 +16,7 @@ class Message extends Component {
     }
 
     handleEmojiSelect = (emoji) => {
-        console.log(emoji)
+        this.props.addReaction(this.props.message, emoji.colons)
         this.togglePicker()
     }
 
@@ -85,12 +85,6 @@ const styles = StyleSheet.create({
             color: '#3366ff',
         },
     },
-
-    <p> How do you feel today? </p>
-    emojis = ['smile', 'frown', 'crying'];
-
-const result = words.filter(word => word.length > 3);
-console.log(result);
 })
 
 const pickerStyles = {
